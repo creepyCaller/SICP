@@ -1,0 +1,10 @@
+#lang scheme
+(define (sum a b c)
+  (cond ((and (> a c) (> b c)) (+ a b)) 
+        ((and (> a b) (> c b)) (+ a c))
+        (else (+ b c))
+   )
+)
+(sum 1 2 3)
+(sum 2 3 4)
+(sum 5 4 3)
